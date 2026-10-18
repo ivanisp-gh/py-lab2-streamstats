@@ -1,0 +1,3 @@
+timestamp,level,source,message
+2026-03-01T11:00:00,INFO,payment,Payment success
+2026-03-01T11:05:00,ERROR,payment,Gateway down

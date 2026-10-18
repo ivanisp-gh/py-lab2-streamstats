@@ -1,0 +1,4 @@
+{"timestamp": "2026-03-01T10:00:00", "level": "INFO", "source": "auth", "message": "User login"}
+{"timestamp": "2026-03-01T10:05:00", "level": "ERROR", "source": "database", "message": "Connection timeout"}
+{"timestamp": "2026-03-01T10:10:00", "level": "CRITICAL", "source": "database", "message": "Disk full"}
+{"timestamp": "2026-03-01T10:15:00", "level": "WARNING", "source": "auth", "message": "Slow response"}

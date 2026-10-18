@@ -1,0 +1,5 @@
+@"
+{"timestamp": "2026-03-01T10:00:00", "level": "INFO", "source": "auth", "message": "OK"}
+{"timestamp": "bad-date", "level": "INFO", "source": "auth", "message": "Broken"}
+{"timestamp": "2026-03-01T10:10:00", "level": "INFO", "source": "auth", "message": "OK"}
+"@ | Set-Content -Encoding utf8 "test files\corrupted.jsonl"
