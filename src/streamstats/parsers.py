@@ -40,7 +40,7 @@ def validate_and_create_event(data: dict) -> LogEvent:
 
 
 def parse_jsonl(stream: TextIO, line_no: int = 0) -> Iterator[tuple[int, LogEvent]]:
-    """Построчно читает поток JSONL со счётчиком в аргументе."""
+    """Построчно читает поток JSONL + счётчик"""
     for raw_line in stream:
         line_no += 1
         line = raw_line.strip()
@@ -60,9 +60,8 @@ def parse_jsonl(stream: TextIO, line_no: int = 0) -> Iterator[tuple[int, LogEven
 
 
 def parse_csv(stream: TextIO, line_no: int = 0) -> Iterator[tuple[int, LogEvent]]:
-    """Построчно читает поток CSV со счётчиком в аргументе."""
+    """Построчно читает поток CSV + счетчик"""
     reader = csv.DictReader(stream)
-    # Если line_no вызван по дефолту (0), учитываем строку заголовка (header = 1-я строка)
     if line_no == 0:
         line_no = 1
 
